@@ -72,9 +72,14 @@ a:visited{color: #81625a;}
 #navigation li{float: left; margin-right: 10px;}
 
 #content_box{ clear: both; margin: 0 auto; position: relative; top: -70px; width: 560px; }
-#content{float: left; width: 560px;}
-#content p{ margin: 10px;}
-#content a{padding: 2px 4px; background: #777; color: #fff; border-radius: 2px;}
+#content{float: left; width: 560px; padding: 20px 0;}
+#content p{ margin: 10px; line-height: 1.3em;}
+#content a{padding: 1px 4px; background: #777; color: #fff; border-radius: 2px;}
+#content h2 a{padding: 0; color:#47527d !important; background: transparent;}
 #content a:hover{text-decoration: none; background: #444;}
+#content h2 a:hover{padding: 0; color:#47527d !important; background: transparent;}
+.post_date{font-size: .8em; margin-left: 10px; color: #777;}
+.post{margin-bottom: 20px;}
+.post_url{margin-left: 10px;}
 
 #wrapper{min-height: 800px; background: #ececec;border-color: #666; border-left: 2px solid; border-right: 2px solid;}
