@@ -65,13 +65,13 @@ a:visited{color: #81625a;}
 #twitter td{border-right: .5px solid #1b84e0;padding: 10px;}
 #twitter h3{vertical-align: middle; font-size: 1.3em;} 
 #twitter h3 a{color: #363232 !important;}
-#branding{position: relative; background: transparent; top: -85px;}
+#branding{position: relative; background: transparent; top: -95px; left: 475px;}
 #branding h1{margin: 0;}
 #branding p{margin: 10px 0 12px 0; font-size: .8em;}
 #navigation{float: left; font-size: .8em;}
 #navigation li{float: left; margin-right: 10px;}
 
-#content_box{ clear: both; margin: 0 auto; position: relative; top: -70px; width: 560px; }
+#content_box{ clear: both; margin: 0 auto; position: relative; top: -86px; width: 560px; }
 #content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word;}
 #content p{ margin: 10px; line-height: 1.3em; }
 #content pre, code{ margin: 10px; line-height: 1.3em; }
