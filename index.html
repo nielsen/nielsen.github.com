@@ -4,8 +4,8 @@ title: notes on camp
 ---
 
 {% for post in site.posts %}
-	<div class="post">
-		<div>
+	<div class="post {{ post.type }}">
+		<div style="background: transparent;">
 			<span class="post_date">{{ post.date | date_to_string }}</span>
 			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		</div>

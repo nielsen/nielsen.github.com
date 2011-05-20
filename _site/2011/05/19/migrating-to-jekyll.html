@@ -1,0 +1,268 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+ 
+<meta charset="utf-8"> 
+<meta name="copyright" content="Copyright (c) T.O. Nielsen" /> 
+<meta name="robots" content="INDEX, FOLLOW" /> 
+<meta name="keywords" content="" /> 
+<meta name="description" content="" /> 
+
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'> 
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="screen" /> 
+<link rel="icon" href="/assets/img/favicon.png" /> 
+ 
+<title>Migrating to Jekyll | notes on camp</title> 
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="site"> 
+<div class="container_7" id="above_header"></div>
+<div id="header">
+	<div class="container_7" id="header_box">
+		<table id="twitter" class="grid_6">
+			<tr>
+				<td><h3><a href="http://twitter.com/witty_name">tweets</a></h3></td>
+				<td id="tweets"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="branding" class="grid_3">
+		<h1>notes on camp</h1>
+		<p>this blog was born under the sign of saturn</p>
+		<ul role="navigation" id="navigation">
+			<li><a href="/">home</a></li>
+			<li>//</li>
+			<li><a href="#">archive</a></li>
+			<li>//</li>
+			<li><a href="/atom.xml">rss</a></li>
+		</ul>
+	</div>	
+</div>
+
+
+<div id="content_box">
+	<div id="content">
+	<div class="container_7">
+	<div class="grid_7">
+		<h2>Migrating to Jekyll</h2>
+		<p>Thanks a lot to <a href='https://gist.github.com/867468'>Derek Watson</a> for this code:</p>
+
+<pre><code>#!/usr/bin/env ruby
+
+# Script to import tumblr posts into local markdown posts ready to be consumed by Jekyll.
+# Inspired by New Bamboo&#39;s post http://blog.new-bamboo.co.uk/2009/2/20/migrating-from-mephisto-to-jekyll
+# Supports post types: regular, quote, link, photo, video and audio
+# Saves local copies of images
+
+require &#39;rubygems&#39;
+require &#39;open-uri&#39;
+require &#39;nokogiri&#39;
+require &#39;net/http&#39;
+require &#39;mime/types&#39;
+require &#39;fileutils&#39;
+require &#39;pathname&#39;
+require &#39;date&#39;
+
+# Configuration
+TUMBLR_DOMAIN =   &quot;http://notesoncamp.com&quot;
+WRITE_DIRECTORY = &quot;../_posts&quot;
+IMAGE_DIRECTORY = &quot;../images&quot;
+LAYOUT = &quot;default&quot;
+
+# follow 3xx redirection
+def fetch(uri_str, limit = 10)
+  raise ArgumentError, &#39;HTTP redirect too deep&#39; if limit == 0
+
+  response = Net::HTTP.get_response(URI.parse(uri_str))
+  case response
+  when Net::HTTPSuccess     then response
+  when Net::HTTPRedirection then fetch(response[&#39;location&#39;], limit - 1)
+  else
+    response.error!
+  end
+end
+
+# save a local copy of a tumblr-hosted image and return the relative uri
+def fetch_img(uri_str) 
+
+  uri = URI.parse(uri_str)
+
+  resp = fetch(uri_str)
+  mime_type = MIME::Types[resp[&quot;content-type&quot;]].first
+
+  # build our local image path
+  path = &quot;#{uri.host}#{uri.path}&quot;
+
+  # rewrite extension
+  extension = mime_type.extensions.first
+  extension = extension == &quot;jpeg&quot; ? &quot;jpg&quot; : extension
+  path = &quot;#{path.chomp(File.extname(path))}.#{extension}&quot;
+
+  print &quot;Image: #{uri_str} --&gt; #{path}\n&quot;
+
+  local_path = &quot;#{IMAGE_DIRECTORY}/#{path}&quot;
+  FileUtils.mkdir_p Pathname.new(local_path).dirname
+  open(local_path, &quot;wb&quot;) { |file| file.write(resp.body) }
+
+  return &quot;/images/#{path}&quot;
+end
+
+# Tumblr api only returns 50 posts per call
+post_offset = 0
+posts_returned = -1
+while posts_returned != 0
+
+  path = TUMBLR_DOMAIN + &quot;/api/read?num=50&amp;filter=none&amp;start=#{post_offset}&quot;
+
+  # Connect to Tumblr and read the API source
+  open(path) do |xml|
+    doc = Nokogiri::XML.parse(xml)
+    posts = doc.css(&quot;post&quot;)
+    posts_returned = posts.count
+    post_offset += posts.count
+    posts.each do |post_tag|
+
+      # Gather data about each post 
+      date = Date.parse(post_tag.attributes[&quot;date&quot;].content)
+      id = post_tag.css(&quot;@id&quot;).first.content
+      slug_tag = post_tag.css(&quot;slug&quot;).first
+      slug = slug_tag.nil? ? nil : slug_tag.content
+      type = post_tag.attributes[&quot;type&quot;].content
+      tags = post_tag.css(&quot;tag&quot;).map{|t| t.content }
+      title = nil
+      body = nil
+
+      if type == &quot;regular&quot;    
+        title_tag = post_tag.css(&quot;regular-title&quot;).first
+        title = title_tag.nil? ? nil : title_tag.content
+        body = post_tag.css(&quot;regular-body&quot;).first.content
+      elsif type == &quot;quote&quot;    
+        text = post_tag.css(&quot;quote-text&quot;).first.content
+        source = post_tag.css(&quot;quote-source&quot;).first.content
+        body = &quot;&gt; #{text}&quot; + &quot;\n\n&quot; + source
+      elsif type == &quot;link&quot;
+        text_tag = post_tag.css(&quot;link-text&quot;).first
+        text = text_tag.nil? ? nil : text_tag.content
+        link = post_tag.css(&quot;link-url&quot;).first.content
+        body = &quot;&lt;a href=\&quot;#{link}\&quot;&gt;#{text}&lt;/a&gt;&quot;
+        desc_tag = post_tag.css(&quot;link-description&quot;).first
+        if desc_tag != nil
+          body &lt;&lt; &quot;\n\n#{desc_tag.content}&quot;
+        end
+      elsif type == &quot;photo&quot;
+        body = &quot;&quot;  
+
+        photoset_tag = post_tag.css(&quot;photoset&quot;).first
+        if photoset_tag.nil?
+          body += &quot;&lt;img src=\&quot;#{fetch_img(post_tag.css(&quot;photo-url&quot;).first.content)}\&quot; /&gt;&quot;
+        else
+          post_tag.css(&quot;photo&quot;).each do |photo_tag|
+            body += &quot;&lt;img src=\&quot;#{fetch_img(photo_tag.css(&quot;photo-url&quot;).first.content)}\&quot; /&gt;&quot;
+          end
+        end
+        text = post_tag.css(&quot;photo-caption&quot;).first.content
+        body += &quot;\n\n#{text}&quot; 
+      elsif type == &quot;video&quot;
+        caption_tag = post_tag.css(&quot;video-caption&quot;).first 
+        if caption_tag != nil
+          text = caption_tag.content
+        end
+        body = post_tag.css(&quot;video-source&quot;).first.content
+      elsif type == &quot;audio&quot;
+        caption_tag = post_tag.css(&quot;audio-caption&quot;).first 
+        text = caption_tag.nil? ? nil : caption_tag.content
+        body = post_tag.css(&quot;audio-player&quot;).first.content
+      else
+        print &quot;ERROR: Post type not supported\n&quot;
+        next
+      end
+
+      if !title &amp;&amp; !text
+        print &quot;ERROR: Post title and text are nil: #{id}\n&quot;
+        next
+      end
+
+      # title defaults
+      title ||= text
+      title = title.gsub(/&lt;.*?&gt;/,&#39;&#39;) # strip html
+      #title = title.length &gt; 60 ? (title[0,60] + &quot;É&quot;) : title # limit length
+
+      # create the slug if necessary and build a _post filename
+      if slug.nil? 
+        slug = &quot;#{title.gsub(/(\s|[^a-zA-Z0-9])/,&quot;-&quot;).gsub(/-+/,&#39;-&#39;).gsub(/-$/,&#39;&#39;).downcase}&quot;
+      end
+      filename = &quot;#{date.strftime(&quot;%Y-%m-%d&quot;)}-#{slug}.html&quot;
+
+      # if there&#39;s no post, we give up.
+      if !body
+        next
+      end
+
+      tagcode = &quot;&quot;
+      if tags.size &gt; 0
+        tagcode = &quot;tags:\n&quot;
+        for t in tags
+          tagcode &lt;&lt; &quot;  - #{t}\n&quot;
+        end
+      end
+
+      jekyll_post = &lt;&lt;-EOPOST
+---
+title: #{title}
+layout: #{LAYOUT}
+#{ tagcode }
+type: #{type}
+---
+
+#{body}
+EOPOST
+
+      # Write files
+      puts &quot;#{ filename }&quot;
+      #puts jekyll_post
+      #puts &quot;&quot;
+
+      file = File.new(&quot;#{WRITE_DIRECTORY}/#{filename}&quot;, &quot;w+&quot;)
+      file.write(jekyll_post)
+      file.close
+
+    end
+  end
+end</code></pre>
+	</div>
+	</div>
+	</div>
+</div>
+
+</div>
+</body>
+<script type="text/javascript" src="http://n9ne.phpfogapp.com/wp-content/themes/n9ne/js/jquery.tweet.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12048513-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+$(function(){
+      $("#tweets").tweet({
+        avatar_size: 0,
+        count: 1,
+        username: "witty_name",
+        loading_text: "searching twitter...",
+        refresh_interval: 200,
+        template: function(i){return i["text"]}
+      });
+    });
+</script>
+</html>

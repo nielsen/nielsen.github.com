@@ -1,6 +1,7 @@
 ---
 title: Migrating to Jekyll
 layout: post
+type: code
 ---
 
 Thanks a lot to [Derek Watson](https://gist.github.com/867468) for this code:

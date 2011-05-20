@@ -15,7 +15,7 @@ layout: nil
   <entry>
     <title>{{ post.title }}</title>
     <link rel='alternate' type='text/html' href='{{ post.url }}' />
-    <id>tag:metajack.im:{% if forloop.index0 > last_dash_index %}{{ post.id | replace:"-","_" }}{% else %}{{ post.id }}{% endif %}</id>
+    <id>{{ post.id }}</id>
     <updated>{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}</updated>
     <updated></updated>
 
@@ -25,9 +25,9 @@ layout: nil
       <email>nielsen@notesoncamp.com</email>
     </author>
 
-    <summary><![CDATA[{{ post.content ]]></summary>
+    <summary><![CDATA[{{ post.content }}]]></summary>
     <content type='html' xml:lang='en' xml:base='http://notesoncamp.com/'>
-      <![CDATA[{{ post.content }}{{ post.extended }}]]>
+      <![CDATA[{{ post.content }}]]>
     </content>
   </entry>
   {% endfor %}
