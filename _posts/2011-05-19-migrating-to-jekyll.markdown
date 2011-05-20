@@ -143,8 +143,8 @@ Thanks a lot to [Derek Watson](https://gist.github.com/867468) for this code:
     
           # title defaults
           title ||= text
-          title = title.gsub(/<.*?>/,'') # strip html
-          #title = title.length > 60 ? (title[0,60] + "É") : title # limit length
+          # strip html
+          title = title.gsub(/<.*?>/,'') 
     
           # create the slug if necessary and build a _post filename
           if slug.nil? 

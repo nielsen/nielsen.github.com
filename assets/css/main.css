@@ -56,6 +56,7 @@ div{background: #ececec;}
 a{text-decoration: none; color: #47527D;}
 a:hover{text-decoration: underline; color: #81625a;}
 a:visited{color: #81625a;}
+blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repeat; font-size: .9em;}
 
 #site{background: transparent;}
 #above_header{height:69px;}
@@ -88,8 +89,8 @@ a:visited{color: #81625a;}
 .photo{background:url(../img/grey_icon_photo.png) no-repeat 0 center;}
 .music{background:url(../img/grey_icon_music.png) no-repeat 0 center;}
 .quote{background:url(../img/grey_icon_quote.png) no-repeat 0 center;}
-
 /* music icon: http://dribbble.com/ckck */
-.musicPost{padding:10px; width: 90px; min-height: 40px; float:left;background:url(../img/grey_icon_music.png) no-repeat 75px 5px; margin:0 15px 15px 0; border-right: 2px solid #AAACAF}
+
+ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 
 #wrapper{min-height: 800px; background: #ececec;border-color: #666; border-left: 2px solid; border-right: 2px solid;}

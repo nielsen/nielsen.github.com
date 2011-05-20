@@ -6,20 +6,21 @@ type: blog
 ---
 
 Archived from [original](http://www.stockyardmagazine.com/fictionpoetry/oubliette/)
-<p>I don’t remember what cares had worn your face</p>&#13;
-<p>or faded your hair from red to white — it was cancer, though,</p>&#13;
-<p>that faded your lips from red to blue.</p>&#13;
-<p>I can’t forget that.</p>&#13;
-&#13;
-<p>I hope you don’t resent my dry eyes;</p>&#13;
-<p>my graveside tears had borrowed their dust</p>&#13;
-<p>from your bones. I just couldn’t try.</p>&#13;
-&#13;
-<p>And so I built you an oubliette but called it a shrine.</p>&#13;
-<p>I put you inside and glorified your shining past.</p>&#13;
-<p>We both forgot the road you took: Death stole the steps from you,</p>&#13;
-<p>and self-indulgence hid the path from me.</p>&#13;
-&#13;
-<p>I’m so sorry, Elizabeth. All the candles burn out at night,</p>&#13;
-<p>the smoky censors stop their pompous puffing,</p>&#13;
-<p>and only darkness kisses my dry cheeks.</p> 
+
+> I don’t remember what cares had worn your face  
+> or faded your hair from red to white — it was cancer, though,  
+> that faded your lips from red to blue.  
+> I can’t forget that.  
+>
+> I hope you don’t resent my dry eyes;  
+> my graveside tears had borrowed their dust  
+> from your bones. I just couldn’t try.  
+> 
+> And so I built you an oubliette but called it a shrine.  
+> I put you inside and glorified your shining past.  
+> We both forgot the road you took: Death stole the steps from you,  
+> and self-indulgence hid the path from me.  
+>
+> I’m so sorry, Elizabeth. All the candles burn out at night,  
+> the smoky censors stop their pompous puffing,  
+> and only darkness kisses my dry cheeks.
