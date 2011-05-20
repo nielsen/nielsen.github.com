@@ -81,7 +81,7 @@ blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repea
 #content a:hover{text-decoration: none; background: #444;}
 #content h2 a:hover{padding: 0; color:#47527d !important; background: transparent;}
 .post_date{font-size: .8em; margin-left: 10px; color: #777;}
-.post{margin-bottom: 20px; background: transparent; padding-left: 30px;}
+.post{margin: 0 0 20px 10px; background: transparent; padding-left: 30px;}
 .post_url{margin-left: 10px;}
 
 .blog{background:url(../img/grey_icon_blog.png) no-repeat 0 center; }
@@ -92,5 +92,7 @@ blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repea
 /* music icon: http://dribbble.com/ckck */
 
 ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
+#content ul{list-style:disc; margin-left: 25px; padding-left: 15px; }
+#content ul li{margin-bottom: 10px;}
 
 #wrapper{min-height: 800px; background: #ececec;border-color: #666; border-left: 2px solid; border-right: 2px solid;}
