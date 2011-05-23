@@ -1,6 +1,10 @@
 ---
 title: Gilead Quote
 layout: post
+tags:
+  - quote
+  - religious
+  - awesome
 
 type: quote
 ---

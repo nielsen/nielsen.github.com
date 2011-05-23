@@ -1,6 +1,8 @@
 ---
 title: Flowers in Paradise 
 layout: post
+tags:
+  - photos
 
 type: photo
 ---

@@ -1,6 +1,12 @@
 ---
 title: Notes on Scandal
 layout: post
+tags:
+  - sy import
+  - poetry
+  - essay
+  - humor
+  - classics
 
 type: blog
 ---

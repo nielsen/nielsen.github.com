@@ -1,6 +1,13 @@
 ---
 title: In Praise of Dirty Capitalism
 layout: post
+tags:
+  - sy import
+  - death
+  - essay
+  - sorrow
+  - moody
+  - family
 
 type: blog
 ---

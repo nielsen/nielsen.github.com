@@ -1,7 +1,8 @@
 ---
 title: When so many are lonely
 layout: post
-
+tags:
+  - quote
 type: quote
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: Migrating to Jekyll
 layout: post
+tags:
+  - nerd
+  - code
+
 type: code
 ---
 

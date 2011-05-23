@@ -1,6 +1,8 @@
 ---
 title: Cocaine Vaccine
 layout: post
+tags:
+  - musings
 
 type: blog
 ---

@@ -1,6 +1,9 @@
 ---
 title: 22-20s Shoot Your Gun
 layout: post
+tags:
+  - moody
+  - music
 
 type: music
 ---

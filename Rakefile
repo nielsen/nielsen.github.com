@@ -1,10 +1,16 @@
 # Good night, sweet prince.
+require 'rubygems'
 
 task :default => [:serv]
 
 desc "Commit and push to deploy"
 task :deploy do 
-  
+  require 'git'
+  g = Git.init 
+  g.add('.')
+  m = Time.new.strftime('%Y/%m/%d %h:%m:%s - autodeploy')
+  g.commit(m)
+  g.push
 end
 
 desc "Rev your engines"
@@ -16,7 +22,6 @@ end
 namespace "posts" do
   desc "Generate lastfm post"
   task :lastfm do 
-    require 'rubygems'
     require 'hpricot'
     require 'open-uri'
     require 'rss'
@@ -30,7 +35,7 @@ namespace "posts" do
 	    
     jekyll_post = <<-EOPOST
 ---
-title: This week on last.fm
+title: Recently on last.fm
 layout: post
 type: music
 ---

@@ -1,6 +1,12 @@
 ---
 title: Grant Park Music Festival Soars at Diminuendo
 layout: post
+tags:
+  - sy imports
+  - essay
+  - music
+  - time
+  - faded glory
 
 type: blog
 ---

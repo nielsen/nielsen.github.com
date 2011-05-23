@@ -1,6 +1,10 @@
 ---
 title: The musical temple in Hampi
 layout: post
+tags:
+  - photo
+  - india
+  - sfw
 
 type: photo
 ---

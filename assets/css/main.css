@@ -48,15 +48,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .clearfix:before, .clearfix:after { content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
 .clearfix:after { clear: both;}
 
+/*
+ *  Blue  - 3a4a52
+ *  Green - 657552
+ *  Red   - 54291d
+ */
+
+
 body{font-family: 'lucida grande', 'helvetica neue', 'helvetica',  sans-serif;background: url('../img/bkgd.jpg') repeat top left #666; color: #222;min-width: 800px; font-size: 14px;}
 h1, h2, h3, h4{font-family: 'Quattrocento Sans', arial, serif;font-weight: normal; color: #81625a;}
 h1{margin: 15px; font-size: 1.5em;}
-h2{margin: 10px; font-size: 1.3em;}
+h2{margin: 10px; font-size: 1.3em; color: #54291d;}
+h3{margin: 10px; font-size: 1.1em; color: #54291d;}
 div{background: #ececec;}
-a{text-decoration: none; color: #47527D;}
+a{text-decoration: none; color: #3a4a52;}
 a:hover{text-decoration: underline; color: #81625a;}
-a:visited{color: #81625a;}
-blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repeat; font-size: .9em; float: left; margin: 10px;}
+a:visited{color: #3a4a52;}
+blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repeat; font-size: .9em; margin: 10px;}
+ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 
 #site{background: transparent;}
 #above_header{height:69px;}
@@ -64,7 +73,7 @@ blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repea
 #header_box{border-color:#c7c7c7; border-left:1px solid; height:100%;background: #c7c7c7;}
 #twitter{border: 2px solid #1B84E0; background: #B6DAFA; position: relative; z-index: 10; left: -69px; margin:23px 0; font-size: .8em;height: 48px;}
 #twitter td{border-right: .5px solid #1b84e0;padding: 10px;}
-#twitter h3{vertical-align: middle; font-size: 1.3em;} 
+#twitter h3{vertical-align: middle; font-size: 1.3em; margin: 0;} 
 #twitter h3 a{color: #363232 !important;}
 #branding{position: relative; background: transparent; top: -95px; left: 475px;}
 #branding h1{margin: 0;}
@@ -91,8 +100,8 @@ blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repea
 .quote{background:url(../img/grey_icon_quote.png) no-repeat 0 center;}
 /* music icon: http://dribbble.com/ckck */
 
-ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
-#content ul{list-style:disc; margin-left: 25px; padding-left: 15px; }
-#content ul li{margin-bottom: 10px;}
-
-#wrapper{min-height: 800px; background: #ececec;border-color: #666; border-left: 2px solid; border-right: 2px solid;}
+#content ul{border-left: 2px solid #657552; margin-left: 25px; }
+#content ul li{margin-bottom: 10px; padding: 2px 2px 2px 15px; border-left: 7px solid #657552;}
+#tags{float: right; margin-left: 15px; font-size: .8em; padding: 10px; padding-top: 0; max-width: 175px; word-wrap: break-word;}
+#tags h3{margin-top: 0;}
+#tags ul{margin-left: 15px; }

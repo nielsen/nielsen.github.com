@@ -1,6 +1,10 @@
 ---
 title: And that is the art of camouflage
 layout: post
+tags:
+  - 30rock
+  - humor
+  - tumblr import
 type: photo
 ---
 

@@ -1,6 +1,12 @@
 ---
 title: O Jerusalem
 layout: post
+tags:
+  - tumblr import
+  - writing
+  - about
+  - india
+  - sfw
 
 type: blog
 ---

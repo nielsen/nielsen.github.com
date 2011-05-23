@@ -1,7 +1,10 @@
 ---
 title: To break free from the tedium of her own cliche
 layout: post
-
+tags:
+  - humor
+  - tumblr import
+  - irony
 type: photo
 ---
 

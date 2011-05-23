@@ -1,6 +1,11 @@
 ---
 title: Oubliette
 layout: post
+tags:
+  - sorrow
+  - moody
+  - sy import
+  - poetry
 
 type: blog
 ---

@@ -1,6 +1,9 @@
 ---
 title: Why We're Too Sensitive
 layout: post
+tags:
+  - outlink
+  - ridiculous
 
 type: blog
 ---
