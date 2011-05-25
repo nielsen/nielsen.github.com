@@ -10,7 +10,9 @@ task :deploy do
   g.add('.')
   m = Time.new.strftime('%Y/%m/%d %h:%m:%s - autodeploy')
   g.commit(m)
+  puts "Committed #{m} version"
   g.push
+  puts "and sent it to the interwebs"
 end
 
 desc "Rev your engines"

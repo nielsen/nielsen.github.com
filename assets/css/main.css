@@ -83,7 +83,7 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 
 #content_box{ clear: both; margin: 0 auto; position: relative; top: -86px; width: 560px; }
 #content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word;}
-#content p{ margin: 10px; line-height: 1.3em; }
+#content p{ margin: 10px; line-height: 1.5em; }
 #content pre, code{ margin: 10px; line-height: 1.3em; }
 #content a{padding: 1px 4px; background: #777; color: #fff; border-radius: 2px;}
 #content h2 a{padding: 0; color:#47527d !important; background: transparent;}
