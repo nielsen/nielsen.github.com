@@ -100,7 +100,7 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 .post_meta{font-size: .9em; background: #f8f8f8 !important; float: left; width: 100%; border-top: 1px dotted #EDEEEE; padding: 3px 0;}
 .post_meta div{margin-left: 10px !important;float: left; background: transparent; padding: 1px; margin-bottom: 2px;}
 /*
-
+// this is useless cruft
 .blog{background:url(../img/grey_icon_blog.png) no-repeat 0 center; }
 .code{background:url(../img/grey_icon_gist.png) no-repeat 0 center; }
 .photo{background:url(../img/grey_icon_photo.png) no-repeat 0 center;}
