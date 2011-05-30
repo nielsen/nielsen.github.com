@@ -5,7 +5,7 @@ tags:
   - india
   - lists
   - tw
-
+summary: India can teach us many, many things. But in the first 24 hours, this is what I learned.
 type: blog
 ---
 

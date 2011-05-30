@@ -5,7 +5,7 @@ tags:
   - india
   - travel
   - tw
-
+summary: I am forced to wonder if there were a way to buy a pre-prayed rosary at Catholic sanctuaries.
 type: blog
 ---
 

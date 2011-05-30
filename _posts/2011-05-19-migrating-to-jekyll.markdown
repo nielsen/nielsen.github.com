@@ -4,11 +4,11 @@ layout: post
 tags:
   - nerd
   - code
-
+summary: Thanks a lot to "Derek Watson":https://gist.github.com/867468 for this code to import from Tumblr.
 type: code
 ---
 
-Thanks a lot to [Derek Watson](https://gist.github.com/867468) for this code:
+Thanks a lot to [Derek Watson](https://gist.github.com/867468) for this code to import from Tumblr:
 
     #!/usr/bin/env ruby
     

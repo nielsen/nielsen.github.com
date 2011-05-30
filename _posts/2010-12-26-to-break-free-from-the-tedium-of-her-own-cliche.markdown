@@ -6,6 +6,7 @@ tags:
   - tumblr import
   - irony
 type: photo
+summary: To break free from the tedium of her own cliche—that was her Christmas wish.
 ---
 
 <img src="/images/notesoncamp.com/photo/1280/2467197646/1/tumblr_l8gfvplbkz1qam6yl.jpg" width="540" />

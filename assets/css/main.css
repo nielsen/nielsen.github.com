@@ -58,9 +58,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body{font-family: 'lucida grande', 'helvetica neue', 'helvetica',  sans-serif;background: url('../img/bkgd.jpg') repeat top left #666; color: #222;min-width: 800px; font-size: 14px;}
 h1, h2, h3, h4{font-family: 'Quattrocento Sans', arial, serif;font-weight: normal; color: #81625a;}
 h1{margin: 15px; font-size: 1.5em;}
-h2{margin: 10px; font-size: 1.3em; color: #54291d;}
-h3{margin: 10px; font-size: 1.1em; color: #54291d;}
-div{background: #ececec;}
+h2{margin: 10px; font-size: 1.5em; color: #54291d;}
+h3{margin: 10px; font-size: 1.3em; color: #54291d;}
+div{background: #fefefe;}
 a{text-decoration: none; color: #3a4a52;}
 a:hover{text-decoration: underline; color: #81625a;}
 a:visited{color: #3a4a52;}
@@ -83,15 +83,23 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 
 #content_box{ clear: both; margin: 0 auto; position: relative; top: -86px; width: 560px; }
 #content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word;}
-#content p{ margin: 10px; line-height: 1.5em; }
+#content p{ margin: 10px; line-height: 1.5em; text-align: left;}
 #content pre, code{ margin: 10px; line-height: 1.3em; }
 #content a{padding: 1px 4px; background: #777; color: #fff; border-radius: 2px;}
 #content h2 a{padding: 0; color:#47527d !important; background: transparent;}
 #content a:hover{text-decoration: none; background: #444;}
 #content h2 a:hover{padding: 0; color:#47527d !important; background: transparent;}
-.post_date{font-size: .8em; margin-left: 10px; color: #777;}
-.post{margin: 0 0 20px 10px; background: transparent; padding-left: 30px;}
+#content ul{border-left: 2px solid #657552; margin-left: 25px; }
+#content ul li{margin-bottom: 10px; padding: 2px 2px 2px 15px; border-left: 7px solid #657552;}
+
+.calendar{text-align: center; font-size: 1.3em; left:-60px; z-index: 40; position: absolute; background: transparent; font-family: 'Quattrocento Sans', arial, serif; display: none;}
+
+.post_date{ color: #777; background: black;  }
+.post{margin: 0 10px 25px 10px; background: transparent; border-bottom: 5px double #EDEEEE; float: left; width: 520px;}
 .post_url{margin-left: 10px;}
+.post_meta{font-size: .9em; background: #f8f8f8 !important; float: left; width: 100%; border-top: 1px dotted #EDEEEE; padding: 3px 0;}
+.post_meta div{margin-left: 10px !important;float: left; background: transparent; padding: 1px; margin-bottom: 2px;}
+/*
 
 .blog{background:url(../img/grey_icon_blog.png) no-repeat 0 center; }
 .code{background:url(../img/grey_icon_gist.png) no-repeat 0 center; }
@@ -100,8 +108,11 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 .quote{background:url(../img/grey_icon_quote.png) no-repeat 0 center;}
 /* music icon: http://dribbble.com/ckck */
 
-#content ul{border-left: 2px solid #657552; margin-left: 25px; }
-#content ul li{margin-bottom: 10px; padding: 2px 2px 2px 15px; border-left: 7px solid #657552;}
+.quote{background:url(../img/grey_icon_quote.png) no-repeat 0 center !important;}
+.quote .post_summary{background: transparent;}
+.quote blockquote{background: none; font-family: 'Quattrocento Sans', arial, serif;font-weight: normal;}
+.quote blockquote p{ font-size: 30px; font-weight: normal; line-height: 35px !important; letter-spacing: -.05em; padding-left: 10px;} 
+
 #tags{float: right; margin-left: 15px; font-size: .8em; padding: 10px; padding-top: 0; max-width: 175px; word-wrap: break-word;}
 #tags h3{margin-top: 0;}
 #tags ul{margin-left: 15px; }

@@ -3,7 +3,7 @@ title: Cocaine Vaccine
 layout: post
 tags:
   - musings
-
+summary: What are the ethical implications of parents immunizing their children without regard to the possibility that asceticism builds character, and responsibility with trust empowers?
 type: blog
 ---
 

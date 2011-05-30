@@ -1,0 +1,18 @@
+---
+title: Recently on last.fm
+layout: post
+type: music
+summary: A small sampling of what I have scrobbled
+---
+I've listened to: 
+
+ * Rihanna – Love The Way You Lie
+ * Madeleine Peyroux – Dance Me To The End Of Love
+ * The Rolling Stones – Ruby Tuesday
+ * Nicole Kidman, Ewan McGregor & Jamie Allen – Elephant Love Medley
+ * Rihanna – S&M
+ * Nina Simone – I Put A Spell On You
+ * Usher – OMG
+ * Melody Gardot – Baby I'm A Fool
+ * Frank Sinatra – As Time Goes by
+ * Jeanne Cotter – Blest Are They

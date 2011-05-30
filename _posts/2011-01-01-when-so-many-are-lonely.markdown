@@ -8,4 +8,8 @@ type: quote
 
 > When so many are lonely as seem to be lonely, it would be inexcusably selfish to be lonely alone.
 
-&mdash;Tennessee Williams
+
+<div class="post_meta">
+  <div><strong>&mdash;Tennessee Williams</strong>.</div>
+  <div>&para; Posted on 01 Jan</div>
+</div>

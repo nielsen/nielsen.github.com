@@ -3,7 +3,7 @@ title: Flowers in Paradise
 layout: post
 tags:
   - photos
-
+summary: Even the reflections of the flowers are visible.
 type: photo
 ---
 

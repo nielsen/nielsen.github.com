@@ -4,7 +4,7 @@ layout: post
 tags:
   - outlink
   - ridiculous
-
+summary: Upcoming NewSouth 'Huck Finn' Eliminates the 'N' Word
 type: blog
 ---
 

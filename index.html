@@ -4,12 +4,30 @@ title: notes on camp
 ---
 
 {% for post in site.posts %}
+  {% unless post.type == 'quote' %}
 	<div class="post {{ post.type }}">
-		<div style="background: transparent;">
-			<span class="post_date">{{ post.date | date_to_string }}</span>
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<div class="calendar grid_1">
+			{{ post.date | date: '<div class="post_date">%d</div> <div class="month">%b</div>' | upcase }}
 		</div>
-		<p class="post_summary">{{ post.content | strip_html | truncatewords: 25 }}</p>
-		<a class="post_url" href="{{ post.url }}">Read it.</a> 
-	</div>	
+		{% unless post.summary == 'first' %}
+			<p class="post_summary">{{ post.summary | textilize }}</p>
+		{% else %}
+    		<p class="post_summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
+		{% endunless %}
+		<div class="post_meta">
+			<div>&para; {{ post.content | number_of_words }} words</div>
+			{% unless post.tags == empty %}
+			  <div>&para; {{ post.tags.size }} Tags: {{ post.tags | array_to_sentence_string }}</div>
+			{% endunless %} 
+			<div>&para; Filed under: {{ post.type | capitalize}} </div>
+			<div>&para; <a href="{{ post.url }}">Permalink</a></div>
+		</div>
+		
+	
+  {% else %}
+    <div class="post {{ post.type }}">
+		<div class="post_summary">{{ post.content }}</div>
+  {% endunless %}
+  </div> <!-- this is for both post boxes -->
 {% endfor %}

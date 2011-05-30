@@ -5,7 +5,7 @@ tags:
   - photo
   - india
   - sfw
-
+summary: The musical temple in Hampi where the *temple* is the instrument--hollow columns are played like chimes.
 type: photo
 ---
 

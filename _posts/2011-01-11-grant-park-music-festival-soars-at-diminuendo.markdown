@@ -7,7 +7,7 @@ tags:
   - music
   - time
   - faded glory
-
+summary: When Mr. Petrillo started providing free concerts in 1935, he wanted to have “accessible music”; however, the experience has changed. Or, more disturbing, our interpretation of the experience has changed.
 type: blog
 ---
 

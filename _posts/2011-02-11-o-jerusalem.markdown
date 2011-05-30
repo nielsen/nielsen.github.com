@@ -7,7 +7,7 @@ tags:
   - about
   - india
   - sfw
-
+summary: I cannot say that I pleased to say that perhaps I am now capable of finishing.
 type: blog
 ---
 

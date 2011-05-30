@@ -6,6 +6,7 @@ tags:
  - quick read
 layout: post
 type: blog
+summary: Manical window-phobia won out over a curio.
 ---
 
 So, dear readers, for whatever reason I've resurrected my interest in [last.fm](http://last.fm). 

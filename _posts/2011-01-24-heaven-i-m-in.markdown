@@ -6,7 +6,7 @@ tags:
   - travel
   - tw
   - sfw
-
+summary: I'm waking from a vivid dream in yet another place; the life of the consultant seems unnaturally inclined toward foreign bedrooms. I need to get over that moment of confusion and irritation at expecting a more familiar ceiling.
 type: blog
 ---
 

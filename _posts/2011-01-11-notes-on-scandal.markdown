@@ -7,7 +7,7 @@ tags:
   - essay
   - humor
   - classics
-
+summary: Ah, but what a god! He who makes the highest temples of heaven tremble with his explosions! / Should not I, a poor little man, do the same? / I did it just *this* way and am pleased.
 type: blog
 ---
 

@@ -8,6 +8,7 @@ tags:
   - sorrow
   - moody
   - family
+summary: In a society that will cremate a projected 36% of its dead in 2010, any American is likely to desecrate a burial site when they camp in a beautiful stretch of woods or sail on Lake Michigan.
 
 type: blog
 ---

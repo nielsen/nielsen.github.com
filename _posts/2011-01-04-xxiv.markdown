@@ -6,7 +6,7 @@ tags:
   - travel
   - tw
   - sfw
-
+summary: What I really mean to say is this - As a Classicist, I never imagined India would be the first part of his empire that I'd set foot in.
 type: blog
 ---
 

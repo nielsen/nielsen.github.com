@@ -6,7 +6,7 @@ tags:
   - moody
   - sy import
   - poetry
-
+summary: It was cancer, though, / that faded your lips from red to blue. / I can’t forget that.
 type: blog
 ---
 

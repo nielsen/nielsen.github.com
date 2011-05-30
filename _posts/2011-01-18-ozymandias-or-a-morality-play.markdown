@@ -6,7 +6,7 @@ tags:
   - india
   - musing
   - travel
-
+summary: A ruin is a reminder that a culture lived as we live today - loved as fiercely, drank as deeply, warred as foolishly. I am forced as a student of the Classics to believe in the tidal power of ancient societies, because while their amenities might not have included air conditioning, their lives, as [Thomas](http://www.bigeye.com/donotgo.htm) mused, forked lightning that illuminates the looming uncertain darkness of our own future.
 type: blog
 ---
 

@@ -32,7 +32,7 @@ namespace "posts" do
 	    
     rss = RSS::Parser.parse(open('http://ws.audioscrobbler.com/2.0/user/theodorenielsen/recenttracks.rss').read)
     rss.items.each do |item|
-      data += "\r\n * [" + item.title + '](' + item.title + ')'
+      data += "\r\n * #{item.title}"
     end
 	    
     jekyll_post = <<-EOPOST
@@ -40,6 +40,7 @@ namespace "posts" do
 title: Recently on last.fm
 layout: post
 type: music
+summary: A small sampling of what I have scrobbled
 ---
 #{data}
 	    EOPOST
