@@ -116,3 +116,5 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 #tags{float: right; margin-left: 15px; font-size: .8em; padding: 10px; padding-top: 0; max-width: 175px; word-wrap: break-word;}
 #tags h3{margin-top: 0;}
 #tags ul{margin-left: 15px; }
+
+#tapir{float: left;}

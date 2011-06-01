@@ -8,7 +8,7 @@
 
       settings = {
                    token: false,
-                   query_param: 'query'
+                   query_param: 'q'
                  };
 
       if (options) {
@@ -19,14 +19,17 @@
         return this;
       }
 
-      $.getJSON(
-        'http://tapirgo.com/api/1/search.json?token=' + settings.token + '&query=' + paramValue(settings.query_param) + '&callback=?', function(data){
-          if(settings['complete']) { settings.complete() }
-          $.each(data, function(key, val) {
-            el.append('<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3><p>' + val.summary + '</p></div>');
-          });
-        }
-      );
+      $.getJSON('http://tapirgo.com/api/1/search.json?token=' + settings.token + '&query=' + paramValue(settings.query_param) + '&callback=?', function(data){
+          		   if(settings['complete']) { settings.complete(); }
+                   if ( data.length > 0 ) {
+          		       el.append('<h1>' + data.length + ' Search Results</h1>');
+          		       $.each(data, function(key, val) {
+          		           el.append('<div class="post"><h2><a href="' + val.link + '">' + val.title + '</a></h2><p class="post_summary">' + val.summary + '</p><div class="post_meta"><div>&para; <a href="' + val.link + '">Permalink</a></div></div></div>');
+          			   });
+        			} else {
+		            	el.append('<h1>Gosh. We don\'t have anything like that.</h1>');
+        			}
+      });
 
       return this;
     }
