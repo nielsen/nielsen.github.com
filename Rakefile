@@ -1,4 +1,5 @@
 # Good night, sweet prince.
+# 3a37b491f9b9fd3fce92b0b2620d48f40c3539c4 :lastfirst
 require 'rubygems'
 
 task :default => [:serv]
