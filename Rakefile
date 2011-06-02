@@ -1,5 +1,5 @@
 # Good night, sweet prince.
-# 3a37b491f9b9fd3fce92b0b2620d48f40c3539c4 :lastfirst
+
 require 'rubygems'
 
 task :default => [:serv]
@@ -23,6 +23,38 @@ task :serv do
 end
 
 namespace "posts" do
+  desc "Creates an instance of the Jekyll magic"
+  task :create_jekyll_instance do
+    
+  end
+
+  desc "Force update of tapir"
+  task :force_update_tapir do     
+    require 'jekyll'
+    require 'rest-client'
+    
+    # Public project, secret key. Don't even try and find it, interwebs. :{)
+    push_url = "http://tapirgo.com/api/1/push_article?secret=#{File.open("./.secretkey").read}"
+    
+    options = {}
+    options = Jekyll.configuration(options)
+    site = Jekyll::Site.new(options)
+    site.read_posts('.')
+
+    site.posts.each do |post|
+      summary = "Read this at Notes on Camp"
+	  summary = post.to_liquid['summary'] unless post.to_liquid['summary'] == 'first'
+      payload = {}
+      payload = {:title => post.to_liquid['title'], 
+                 :published_on => post.to_liquid['date'].strftime('%F%TZ'), 
+                 :summary => "<![CDATA[#{ summary }]]>", 
+                 :link => post.to_liquid['url'], 
+                 :content => "<![CDATA[#{ post.to_liquid['content'] }]]>"}
+      result = RestClient.post( push_url, { :article => payload } )
+      p result + " for #{post.to_liquid['title']}"
+    end
+  end
+
   desc "Generate lastfm post"
   task :lastfm do 
     require 'hpricot'

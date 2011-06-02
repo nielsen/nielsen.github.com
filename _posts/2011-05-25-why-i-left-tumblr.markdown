@@ -6,6 +6,7 @@ tags:
  - notes
 layout: post
 summary: first
+published: false
 ---
 
 It started with the fact that I wanted to redesign my blog.

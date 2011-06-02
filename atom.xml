@@ -25,7 +25,11 @@ layout: nil
       <email>nielsen@notesoncamp.com</email>
     </author>
 
-    <summary><![CDATA[{{ post.content }}]]></summary>
+	{% unless post.summary == 'first' %}
+    <summary><![CDATA[{{ post.summary | textilize }}]]></summary>
+    {% else %}
+    <summary><![CDATA[{{ post.content | strip_html | truncatewords: 50 }}]]></summary>
+    {% endunless %}
     <content type='html' xml:lang='en' xml:base='http://notesoncamp.com/'>
       <![CDATA[{{ post.content }}]]>
     </content>
