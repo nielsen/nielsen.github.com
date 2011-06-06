@@ -76,7 +76,7 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 #twitter h3{vertical-align: middle; font-size: 1.3em; margin: 0;} 
 #twitter h3 a{color: #363232 !important;}
 #branding{position: relative; background: transparent; top: -95px; left: 475px;}
-#blog_title{-webkit-transform: rotate(270deg); font-size: 7em; position: absolute; z-index: 10; letter-spacing: -10px; font-weight: bold; color: #fff; left:-20px; top: 360px;}
+#blog_title{-webkit-transform: rotate(270deg); font-size: 7em; position: absolute; z-index: 10; letter-spacing: -10px; font-weight: bold; color: #fff; left:-25px; top: 360px;}
 #branding h1{margin: 0;}
 #branding p{margin: 10px 0 12px 0; font-size: .8em;}
 #navigation{float: left; font-size: .8em;}
