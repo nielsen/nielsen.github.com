@@ -4,7 +4,7 @@ layout: post
 tags:
   - nerd
   - code
-summary: Thanks a lot to "Derek Watson":https://gist.github.com/867468 for this code to import from Tumblr.
+summary: Thanks a lot to [Derek Watson](https://gist.github.com/867468) for this code to import from Tumblr.
 type: code
 ---
 

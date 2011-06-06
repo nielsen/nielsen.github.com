@@ -11,7 +11,7 @@ title: notes on camp
 			{{ post.date | date: '<div class="post_date">%d</div> <div class="month">%b</div>' | upcase }}
 		</div>
 		{% unless post.summary == 'first' %}
-			<p class="post_summary">{{ post.summary | textilize }}</p>
+			<p class="post_summary">{{ post.summary | markdownify }}</p>
 		{% else %}
     		<p class="post_summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
 		{% endunless %}

@@ -45,11 +45,7 @@ namespace "posts" do
       summary = "Read this at Notes on Camp"
 	  summary = post.to_liquid['summary'] unless post.to_liquid['summary'] == 'first'
       payload = {}
-      payload = {:title => post.to_liquid['title'], 
-                 :published_on => post.to_liquid['date'].strftime('%F%TZ'), 
-                 :summary => "<![CDATA[#{ summary }]]>", 
-                 :link => post.to_liquid['url'], 
-                 :content => "<![CDATA[#{ post.to_liquid['content'] }]]>"}
+      payload = {:link => post.to_liquid['url'], :title => post.to_liquid['title'], :summary => "<![CDATA[#{ summary }]]>", :content => "<![CDATA[#{ post.to_liquid['content'] }]]>", :published_on => post.to_liquid['date'].strftime('%F%TZ'), }
       result = RestClient.post( push_url, { :article => payload } )
       p result + " for #{post.to_liquid['title']}"
     end
