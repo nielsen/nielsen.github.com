@@ -82,8 +82,11 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 #navigation{float: left; font-size: .8em;}
 #navigation li{float: left; margin-right: 10px;}
 
+#search_form{display: none; height:13px;}
+#search_form_input{height:11px; margin: 0; border: none; font-size: 9px; padding: 0; width: 80%}
+
 #content_box{ clear: both; margin: 0 auto; position: relative; top: -88px; width: 560px; }
-#content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word;}
+#content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word; min-height: 520px;}
 #content p{ margin: 10px; line-height: 1.5em; text-align: left;}
 #content pre, code{ margin: 10px; line-height: 1.3em; }
 #content a{padding: 1px 4px; background: #777; color: #fff; border-radius: 2px;}

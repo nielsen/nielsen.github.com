@@ -27,6 +27,14 @@ $(function(){
         refresh_interval: 200,
         template: function(i){return i["text"]}
       });
+      
+      $('#search_link').click(function(){
+      	$('ul#navigation').fadeOut(function(){
+      		$('form#search_form').fadeIn();
+      	});
+    
+      });
+      
     });
 
 </script>
