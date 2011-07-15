@@ -4,6 +4,20 @@ title: notes on camp
 ---
 
 {% for post in site.posts %}
+  {% if forloop.index0 == 4 %}
+    <div class="post" style="height: 60px; margin-left:0px;">
+    	<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-2611365624834006";
+			/* NoC */
+			google_ad_slot = "3598335867";
+			google_ad_width = 468;
+			google_ad_height = 60;
+			//-->
+			</script>
+			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+  {% endif %}
   {% unless post.type == 'quote' %}
 	<div class="post {{ post.type }}">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -16,12 +30,12 @@ title: notes on camp
     		<p class="post_summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
 		{% endunless %}
 		<div class="post_meta">
-			<div>&para; {{ post.content | number_of_words }} words</div>
+			<div><span class="para">&para;</span> {{ post.content | number_of_words }} words</div>
 			{% unless post.tags == empty %}
-			  <div>&para; {{ post.tags.size }} Tags: {{ post.tags | array_to_sentence_string }}</div>
+			  <div><span class="para">&para;</span> {{ post.tags.size }} Tags: {{ post.tags | array_to_sentence_string }}</div>
 			{% endunless %} 
-			<div>&para; Filed under: {{ post.type | capitalize}} </div>
-			<div>&para; <a href="{{ post.url }}">Permalink</a></div>
+			<div><span class="para">&para;</span> Filed under: {{ post.type | capitalize}} </div>
+			<div><span class="para">&para;</span> <a href="{{ post.url }}">Permalink</a></div>
 		</div>
 		
 	
@@ -29,5 +43,5 @@ title: notes on camp
     <div class="post {{ post.type }}">
 		<div class="post_summary">{{ post.content }}</div>
   {% endunless %}
-  </div> <!-- this is for both post boxes -->
+  </div> {% comment %} #this is for both post boxes {% endcomment %}
 {% endfor %}

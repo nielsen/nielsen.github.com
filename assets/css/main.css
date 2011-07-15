@@ -49,14 +49,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .clearfix:after { clear: both;}
 
 /*
+@font-face {
+    font-family: 'Pictos';
+    src: url('http://static.tumblr.com/fftf9xi/xvMl9xvas/pictos-webfont.svg#webfontqr0e9yzb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+
+/*
  *  Blue  - 3a4a52
  *  Green - 657552
  *  Red   - 54291d
  */
 
 
-body{font-family: 'lucida grande', 'helvetica neue', 'helvetica',  sans-serif;background: url('../img/bkgd.jpg') repeat top left #222; color: #222;min-width: 800px; font-size: 14px;}
-h1, h2, h3, h4{font-family: 'Quattrocento Sans', arial, serif;font-weight: normal; color: #81625a;}
+body{font-family: 'lucida grande', 'helvetica neue', 'helvetica',  sans-serif; background: #fefefe; color: #222;min-width: 800px; font-size: 14px;}
+h1, h2, h3, h4{font-family: 'Quattrocento Sans', 'helvetica', 'lucida grande', 'helvetica neue', sans-serif; font-weight: normal; color: #81625a;}
 h1{margin: 15px; font-size: 1.5em;}
 h2{margin: 10px; font-size: 1.5em; color: #54291d;}
 h3{margin: 10px; font-size: 1.3em; color: #54291d;}
@@ -68,29 +78,17 @@ blockquote{padding: 15px; background: url(../img/blockquote.gif) repeat no-repea
 ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 
 #site{background: transparent;}
-#above_header{height:69px;}
-#header{height:95px; background: #c7c7c7; border-color: #9e9e9e; border-top: 1px solid; border-bottom: 1px solid;}
-#header_box{border-color:#c7c7c7; border-left:1px solid; height:100%;background: #c7c7c7;}
-#twitter{border: 2px solid #1B84E0; background: url('../img/grey_icon_twitter.png') no-repeat 1% 115% #B6DAFA; position: relative; z-index: 10; left: -69px; margin:23px 0; font-size: .8em;height: 50px;}
-#twitter td{border-right: .5px solid #1b84e0;padding: 5px 10px;}
-#twitter h3{vertical-align: middle; font-size: 1.3em; margin: 0;} 
-#twitter h3 a{color: #363232 !important;}
-#branding{position: relative; background: transparent; top: -95px; left: 475px;}
-#blog_title{-webkit-transform: rotate(270deg); font-size: 7em; position: absolute; z-index: 0; letter-spacing: -10px; font-weight: bold; color: #fff; left:-71px; top: 360px;}
-#branding h1{margin: 0;}
-#branding p{margin: 10px 0 12px 0; font-size: .8em;}
-#navigation{float: left; font-size: .8em;}
-#navigation li{float: left; margin-right: 10px;}
 
-#search_form{display: none; height:13px;}
-#search_form_input{height:11px; margin: 0; border: none; font-size: 9px; padding: 0; width: 80%}
+#header{height: 115px; background: gray;}
+#header h1{ font-family: 'helvetica', 'lucida grande', 'helvetica neue', sans-serif; margin: 0 15px; font-size: 4em; letter-spacing: -3px; font-weight: bold; color: #54291d; display: block; height: 48px;}
 
-#content_box{ clear: both; margin: 0 auto; position: relative; top: -88px; width: 560px; }
-#content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word; min-height: 520px;}
+
+#darwin{ margin: 0 auto; width: 560px; }
+#content{float: left; width: 560px; padding: 20px 0; word-wrap: break-word; min-height: 520px; background: green;}
 #content p{ margin: 10px; line-height: 1.5em; text-align: left;}
 #content pre, code{ margin: 10px; line-height: 1.3em; }
 #content a{padding: 1px 4px; background: #777; color: #fff; border-radius: 2px;}
-#content h2 a{padding: 0; color:#47527d !important; background: transparent;}
+#content h2 a{padding: 0; color:#54291d !important; background: transparent;}
 #content a:hover{text-decoration: none; background: #444;}
 #content h2 a:hover{padding: 0; color:#47527d !important; background: transparent;}
 #content ul{border-left: 2px solid #657552; margin-left: 25px; }
@@ -116,6 +114,14 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 .quote .post_summary{background: transparent;}
 .quote blockquote{background: none; font-family: 'Quattrocento Sans', arial, serif;font-weight: normal;}
 .quote blockquote p{ font-size: 30px; font-weight: normal; line-height: 35px !important; letter-spacing: -.05em; padding-left: 10px;} 
+
+#twitter{border: 2px solid #1B84E0; background: url('../img/grey_icon_twitter.png') no-repeat 1% 115% #B6DAFA; position: relative; z-index: 10;  margin:23px 0; font-size: .8em;height: 50px;}
+#twitter td{border-right: .5px solid #1b84e0;padding: 5px 10px;}
+#twitter h3{vertical-align: middle; font-size: 1.3em; margin: 0;} 
+#twitter h3 a{color: #363232 !important;}
+#twitter a{background: transparent !important;}
+#twitter li{border: 0 !important;}
+#twitter ul{border: 0 !important; margin-left: 0 !important;}
 
 #tags{float: right; margin-left: 15px; font-size: .8em; padding: 10px; padding-top: 0; max-width: 175px; word-wrap: break-word;}
 #tags h3{margin-top: 0;}

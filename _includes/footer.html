@@ -1,4 +1,9 @@
-	</div>
+<table id="twitter" class="grid_6">
+			<tr>
+				<td><h3><a href="http://twitter.com/witty_name">tweets</a></h3></td>
+				<td id="tweets"></td>
+			</tr>
+		</table>
 	</div>
 	</div>
 </div>
@@ -6,8 +11,9 @@
 </div>
 </body>
 <script type="text/javascript" src="/assets/js/jquery.tweet.js"></script>
+<!--<script type="text/javascript" src="/assets/js/raphael.js"></script>-->
+<script type="text/javascript" src="/assets/js/custom.js"></script>
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-12048513-6']);
   _gaq.push(['_trackPageview']);
@@ -17,25 +23,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-$(function(){
-      $("#tweets").tweet({
-        avatar_size: 0,
-        count: 1,
-        username: "witty_name",
-        loading_text: "Searching Twitter... <br />Please be patient",
-        refresh_interval: 200,
-        template: function(i){return i["text"]}
-      });
-      
-      $('#search_link').click(function(){
-      	$('ul#navigation').fadeOut(function(){
-      		$('form#search_form').fadeIn();
-      	});
-    
-      });
-      
-    });
 
 </script>
 </html>
