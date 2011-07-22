@@ -4,26 +4,25 @@ title: notes on camp
 ---
 
 {% for post in site.posts %}
-  {% if forloop.index0 == 4 %}
-    <div class="post" style="height: 60px; margin-left:0px;">
+
+{% if forloop.index0 == 5 %}
+    <article class="ad">
+    <span style="font-size: 0.8em; font-color: #ececec; margin-bottom: 10px;">Sponsored Advertisement</span>
     	<script type="text/javascript"><!--
 			google_ad_client = "ca-pub-2611365624834006";
-			/* NoC */
-			google_ad_slot = "3598335867";
-			google_ad_width = 468;
-			google_ad_height = 60;
+			/* notes new */
+			google_ad_slot = "3351169068";
+			google_ad_width = 300;
+			google_ad_height = 250;
 			//-->
-			</script>
-			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-    </div>
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>    
+	</article>
   {% endif %}
+
   {% unless post.type == 'quote' %}
-	<div class="post {{ post.type }}">
+	<article class="{{ post.type }}">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<div class="calendar grid_1">
-			{{ post.date | date: '<div class="post_date">%d</div> <div class="month">%b</div>' | upcase }}
-		</div>
 		{% unless post.summary == 'first' %}
 			<p class="post_summary">{{ post.summary | rdiscount }}</p>
 		{% else %}
@@ -40,8 +39,8 @@ title: notes on camp
 		
 	
   {% else %}
-    <div class="post {{ post.type }}">
+    <article class="{{ post.type }}">
 		<div class="post_summary">{{ post.content }}</div>
   {% endunless %}
-  </div> {% comment %} #this is for both post boxes {% endcomment %}
+  </article> {% comment %} #this is for both post boxes {% endcomment %}
 {% endfor %}

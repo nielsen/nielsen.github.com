@@ -1,4 +1,6 @@
 {% include header.html %}
+  <div class="entry">
+
   <h2>{{ page.title }}</h2>
   
   
@@ -14,7 +16,8 @@
   {% endunless %}
   
   {{ content }}
-  
+
+  </div>
   {% unless site.related_posts == empty %}
   <h3>Other Reading</h3>
   <ul>

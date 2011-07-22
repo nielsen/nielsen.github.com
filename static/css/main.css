@@ -1,0 +1,64 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:' ';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}a,h1 a,h2 a{text-decoration:none}a img{border:none}table{border-collapse:collapse;border-spacing:0}body,h1,h2,h3,h4{font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal}article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+
+/*
+ *  Blue  - 3a4a52
+ *  Green - 657552
+ *  Red   - 54291d
+ */
+
+
+body{font-family: 'lucida grande', 'helvetica neue', 'helvetica',  sans-serif;background: #fefefe; color: #191919; font-size: 14px; line-height: 1.5; overflow-y: scroll;}
+h1, h2, h3, h4{font-family: 'Quattrocento Sans', arial, serif;font-weight: normal; color: #81625a;}
+h1{margin: 15px; font-size: 1.5em;}
+h2{margin: 10px; font-size: 1.5em; color: #54291d;}
+h3{margin: 10px; font-size: 1.3em; color: #54291d;}
+a{text-decoration: none; color: #3a4a52; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
+a:hover{text-decoration: underline; color: #81625a;}
+a:visited{color: #3a4a52;}
+blockquote{padding: 15px; font-size: .9em; margin: 10px;}
+ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
+
+#site{width: 960px; margin-right: auto; margin-left: auto; position: relative;}
+#header{width: 320px; float:right; }
+#header h1 a{background: transparent url('../img/logo.png') no-repeat center; height:120px; text-indent: -9999px; display: block;}
+#header p{font-family: "Quattrocento Sans", arial, sans-serif; margin: 20px 0 20px 20px;}
+#twitter{background: url('../img/grey_icon_twitter.png') no-repeat 1% 52%; font-size: .9em; margin: 20px; font-family: "Quattrocento Sans";} 
+#twitter ul{margin: 20px 0 0 55px;}
+/* #twitter ul li{font-size: .8em;} */
+
+#navigation{float: left; font-size: .9em;}
+#navigation li{float: left; margin-left: 20px;}
+
+#search_form{height:13px; display: block; position: relative; top: -5px;}
+#search_form_input{height:15px; margin: 0;  border: none; font-size: 10px; padding: 0; width: 70%; position: relative; top: -4px;}
+
+#content{word-wrap: break-word; top: 0; position: absolute; width: 640px; border-left: 1px solid #D6D6D6;}
+#content pre, code{ margin: 10px; line-height: 1.3em; }
+#content a{padding: 1px 4px; background: #777; color: #fff; border-radius: 2px;}
+#content h2 a{padding: 0; color:#47527d !important; background: transparent;}
+#content a:hover{text-decoration: none; background: #444;}
+#content h2 a:hover{padding: 0; color:#47527d !important; background: transparent;}
+#content ul{border-left: 2px solid #657552; margin-left: 25px; }
+#content ul li{margin-bottom: 10px; padding: 2px 2px 2px 15px; border-left: 7px solid #657552;}
+
+section article { background: transparent; border-bottom: 5px double #EDEEEE; float: left; width: 318px; overflow: hidden; margin-left: 0;  padding: 0; border-left: 1px solid #D6D6D6; border-right: 1px solid #D6D6D6; border-left-style: none;}
+section article:hover{background: #f8f8f8; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
+section article h2{ margin: 25px 10px 10px 20px;}
+section article p{margin: 0 45px 20px 45px;}
+.ad{background: transparent; border-bottom: 5px double #EDEEEE; float: left; width: 300px; overflow: hidden; margin-left: 0;  padding: 9px; border-left: 1px solid #D6D6D6; border-right: 1px solid #D6D6D6; border-left-style: none;}
+.post_url{margin-left: 10px;}
+.post_meta{font-size: .9em; background: #f8f8f8 !important; float: left; width: 100%; border-top: 1px dotted #EDEEEE; padding: 3px 0;}
+.post_meta div{margin-left: 10px !important;float: left; background: transparent; padding: 1px; margin-bottom: 2px;}
+
+.quote{background:url(../img/grey_icon_quote.png) no-repeat 5% center !important;}
+.quote .post_summary{background: transparent;}
+.quote blockquote{background: none; font-family: 'Quattrocento Sans', arial, serif;font-weight: normal;}
+.quote blockquote p{ font-size: 25px; font-weight: normal; line-height: 30px !important; letter-spacing: -.05em; padding-left: 10px;} 
+
+.entry p{margin: 10px 0 !important;}
+
+#tags{float: right; margin-left: 15px; font-size: .8em; padding: 10px; padding-top: 0; max-width: 175px; word-wrap: break-word;}
+#tags h3{margin-top: 0;}
+#tags ul{margin-left: 15px; }
+
+#tapir{float: left;}
