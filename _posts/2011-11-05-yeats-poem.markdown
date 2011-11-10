@@ -5,7 +5,7 @@ type: blog
 tags:
  - poem
  - thanks to heroes
-summary: You are the white apron of the baker, and the marsh birds suddenly in flight. However, you are not the wind in the orchard, the plums on the counter, or the house of cards.
+summary: Mere anarchy is loosed upon the world, The blood-dimmed tide is loosed, and everywhere The ceremony of innocence is drowned
 ---
 
 Turning and turning in the widening gyre
