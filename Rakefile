@@ -23,11 +23,6 @@ task :serv do
 end
 
 namespace "posts" do
-  desc "Creates an instance of the Jekyll magic"
-  task :create_jekyll_instance do
-    
-  end
-
   desc "Force update of tapir"
   task :force_update_tapir do     
     require 'jekyll'
