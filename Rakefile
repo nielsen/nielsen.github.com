@@ -32,6 +32,7 @@ namespace "posts" do
   task :force_update_tapir do     
     require 'jekyll'
     require 'rest-client'
+    require 'json'
     
     # Public project, secret key. Don't even try and find it, interwebs. :{)
     push_url = "http://tapirgo.com/api/1/push_article?secret=#{File.open("./.secretkey").read}"
@@ -43,11 +44,11 @@ namespace "posts" do
 
     site.posts.each do |post|
       summary = "Read this at Notes on Camp"
-	  summary = post.to_liquid['summary'] unless post.to_liquid['summary'] == 'first'
+	    summary = post.to_liquid['summary'] unless post.to_liquid['summary'] == 'first'
       payload = {}
-      payload = {:link => post.to_liquid['url'], :title => post.to_liquid['title'], :summary => "<![CDATA[#{ summary }]]>", :content => "<![CDATA[#{ post.to_liquid['content'] }]]>", :published_on => post.to_liquid['date'].strftime('%F%TZ'), }
+      payload = {:link => "http://notesoncamp.com" + post.url, :title => post.data['title'], :summary => "<![CDATA[#{ summary }]]>", :content => "<![CDATA[#{ post.to_liquid['content'] }]]>", :published_on => post.to_liquid['date'].strftime('%F%TZ'), }
       result = RestClient.post( push_url, { :article => payload } )
-      p result + " for #{post.to_liquid['title']}"
+      p "Pushed #{post.to_liquid['title']}"
     end
   end
 
