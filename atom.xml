@@ -3,10 +3,10 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>notes on camp</title>
-  <link rel="alternate" type="text/html" href="http://notesoncamp.com/" />
-  <link rel="self" type="application/atom+xml" href="http://notesoncamp.com/atom.xml" />
-  <id>http://notesoncamp.com/atom.xml</id>
+  <title>theodore nielsen</title>
+  <link rel="alternate" type="text/html" href="http://theodorenielsen.com/" />
+  <link rel="self" type="application/atom+xml" href="http://theodorenielsen.com/atom.xml" />
+  <id>http://theodorenielsen.com/atom.xml</id>
   <updated>{{ site.time | date_to_utc | date:"%Y-%m-%dT%H:%M:%SZ" }}</updated>
   <subtitle>this blog was born under the sign of saturn</subtitle>
 
@@ -17,12 +17,11 @@ layout: nil
     <link rel='alternate' type='text/html' href='{{ post.url }}' />
     <id>{{ post.id }}</id>
     <updated>{{ post.date | date.getutc:"%Y-%m-%dT%H:%M:00Z" }}</updated>
-    <updated></updated>
 
     <author>
       <name>Theodore O. Nielsen</name>
-      <uri>http://notesoncamp.com/</uri>
-      <email>nielsen@notesoncamp.com</email>
+      <uri>http://theodorenielsen.com/</uri>
+      <email>ted@theodorenielsen.com</email>
     </author>
 
 	{% unless post.summary == 'first' %}
@@ -30,7 +29,7 @@ layout: nil
     {% else %}
     <summary><![CDATA[{{ post.content | strip_html | truncatewords: 50 }}]]></summary>
     {% endunless %}
-    <content type='html' xml:lang='en' xml:base='http://notesoncamp.com/'>
+    <content type='html' xml:lang='en' xml:base='http://theodorenielsen.com/'>
       <![CDATA[{{ post.content }}]]>
     </content>
   </entry>
