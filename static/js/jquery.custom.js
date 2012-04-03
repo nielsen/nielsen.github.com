@@ -8,10 +8,10 @@ $(function(){
     template: function(i){return i["text"]}
   });
   
-  $('#search_link').click(function(){
-  	$('ul#navigation').fadeOut(function(){
-  		$('form#search_form').fadeIn();
-  	});
-  });
-      
+  if ( $.cookie("alembic") == 'true' ) {
+	$('#rss').html('<a href="/portfolio.html">code</a>');
+  }
+  
+  	
+    
 });

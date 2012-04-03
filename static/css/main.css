@@ -7,6 +7,7 @@ h2{margin: 10px; font-size: 1.5em; color: #2A6768;}
 h3{margin: 10px; font-size: 1.3em; color: #2A6768;}
 a{text-decoration: none; color: #E16354; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
 a:hover{text-decoration: underline; color: #F5B168;}
+a.exempt{padding:0 !important;}
 blockquote{padding: 15px; font-size: .9em; margin: 10px;}
 ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 
