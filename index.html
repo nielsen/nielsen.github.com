@@ -4,28 +4,29 @@ title: notes on camp
 ---
 
 {% for post in site.posts %}
-
-  {% unless post.type == 'quote' %}
-	<article class="{{ post.type }}">
-		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		{% unless post.summary == 'first' %}
-			<p class="post_summary">{{ post.summary | rdiscount }}</p>
-		{% else %}
-    		<p class="post_summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
-		{% endunless %}
-		<div class="post_meta">
-			<div><span class="para">&para;</span> {{ post.content | number_of_words }} words</div>
-			{% unless post.tags == empty %}
-			  <div><span class="para">&para;</span> {{ post.tags.size }} Tags: {{ post.tags | array_to_sentence_string }}</div>
-			{% endunless %} 
-			<div><span class="para">&para;</span> Filed under: {{ post.type | capitalize}} </div>
-			<div><span class="para">&para;</span> <a href="{{ post.url }}">Permalink</a></div>
-		</div>
-		
-	
-  {% else %}
+  {% unless post.draft %}
+    {% unless post.type == 'quote' %}
     <article class="{{ post.type }}">
-		<div class="post_summary">{{ post.content }}</div>
+    	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    	{% unless post.summary == 'first' %}
+    		<p class="post_summary">{{ post.summary | rdiscount }}</p>
+    	{% else %}
+      		<p class="post_summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
+    	{% endunless %}
+    	<div class="post_meta">
+    		<div><span class="para">&para;</span> {{ post.content | number_of_words }} words</div>
+    		{% unless post.tags == empty %}
+    		  <div><span class="para">&para;</span> {{ post.tags.size }} Tags: {{ post.tags | array_to_sentence_string }}</div>
+    		{% endunless %}
+    		<div><span class="para">&para;</span> Filed under: {{ post.type | capitalize}} </div>
+    		<div><img src="https://d1yg14i6wd46hx.cloudfront.net/cargo/icons/anchor_gray-b33d1894c006a59fa9d56c42c8fd4880.svg" class="anchor" alt="Svbtle Permalink"> <a href="{{ post.url }}">Permalink</a></div>
+    	</div>
+
+
+    {% else %}
+      <article class="{{ post.type }}">
+    	<div class="post_summary">{{ post.content }}</div>
+    {% endunless %}
+    </article> {% comment %} #this is for both post boxes {% endcomment %}
   {% endunless %}
-  </article> {% comment %} #this is for both post boxes {% endcomment %}
 {% endfor %}

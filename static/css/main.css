@@ -1,4 +1,5 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:' ';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}a,h1 a,h2 a{text-decoration:none}a img{border:none}table{border-collapse:collapse;border-spacing:0}body,h1,h2,h3,h4{font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal}article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block; float: left;}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap;word-wrap:break-word}q{quotes:\201C \201D \2018 \2019}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body,figure{margin:0}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:' ';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}a,h1 a,h2 a{text-decoration:none}a img{border:none}table{border-collapse:collapse;border-spacing:0}body,h1,h2,h3,h4{font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal}
 
 body{font-family: 'Quattrocento Sans', 'helvetica neue light', 'helvetica neue', 'helvetica', sans-serif;background: #fefefe; color: #191919; font-size: 14px; line-height: 1.5; overflow-y: scroll;}
 h1, h2, h3, h4{font-weight: normal; color: #2A6768;}
@@ -10,6 +11,8 @@ a:hover{text-decoration: underline; color: #F5B168;}
 a.exempt{padding:0 !important;}
 blockquote{padding: 15px; font-size: .9em; margin: 10px;}
 ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
+abbr{border-bottom: 1px dotted silver;}
+footer{padding-top: 25px;}
 
 #site{width: 960px; margin-right: auto; margin-left: auto; position: relative;}
 #header{width: 320px; float:left; padding-right:20px;}
@@ -17,9 +20,12 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 #header p{font-family: "Quattrocento Sans", arial, sans-serif; margin: 20px 0 20px 20px;}
 #twitter{background: url('../img/grey_icon_twitter.png') no-repeat 1% 52%; font-size: .9em; margin: 20px; font-family: "Quattrocento Sans", 'Helvetica Neue Light', 'Helvetica Neue', sans-serif;}
 #twitter ul{margin: 20px 0 0 55px;}
+#twitter li{list-style: none;}
+.brag{margin-left: 20px;}
 
 #navigation{float: left; font-size: .9em;}
-#navigation li{float: left; margin-left: 20px;}
+#navigation{padding-left: 0;}
+#navigation li{float: left; margin-left: 20px; list-style: none;}
 
 #search_form{height:13px; display: block; position: relative; top: -5px;}
 #search_form_input{height:15px; margin: 0;  border: none; font-size: 10px; padding: 0; width: 70%; position: relative; top: -4px;}
@@ -41,11 +47,12 @@ section article p{margin: 0 45px 20px 45px;}
 .post_url{margin-left: 10px;}
 .post_meta{font-size: .9em; background: #f8f8f8 !important; float: left; width: 100%; border-top: 1px dotted #EDEEEE; padding: 3px 0;}
 .post_meta div{margin-left: 10px !important;float: left; background: transparent; padding: 1px; margin-bottom: 2px;}
+.anchor{width: 16px; height: 12px; display: inline-block; margin: 0; padding: 0; border: 0; vertical-align: top; padding-top: 3px;}
 
 .quote{background:url(../img/grey_icon_quote.png) no-repeat 5% center !important;}
 .quote .post_summary{background: transparent;}
 .quote blockquote{background: none; font-family: 'Quattrocento Sans', arial, serif;font-weight: normal;}
-.quote blockquote p{ font-size: 25px; font-weight: normal; line-height: 30px !important; letter-spacing: -.05em; padding-left: 10px;} 
+.quote blockquote p{ font-size: 25px; font-weight: normal; line-height: 30px !important; letter-spacing: -.05em; padding-left: 10px;}
 
 .entry{padding:25px;}
 .entry h2{margin-left: 0;}
@@ -56,6 +63,6 @@ section article p{margin: 0 45px 20px 45px;}
 #tags ul{margin-left: 15px; }
 
 p#copyright{padding:25px; display:inline;}
-img#monster{vertical-align: bottom; position: relative; top: 15px; left: 134px;}
+img#monster{vertical-align: bottom; position: relative; top: -20px; left: 448px;}
 
 #tapir{float: left;}

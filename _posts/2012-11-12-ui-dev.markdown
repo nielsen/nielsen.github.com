@@ -1,0 +1,12 @@
+---
+title: UI Dev
+layout: post
+tags:
+  - uxd
+  - ui-dev
+summary: Highly efficient data centers are the secret to green and cheap
+type: blog
+draft: true
+---
+
+[Facebook's Open Compute Project](http://opencompute.org) debuts the server architecture (even on a hardware level!) that makes their data center one of the most efficient in the world.
