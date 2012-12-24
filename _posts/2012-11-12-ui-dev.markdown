@@ -1,12 +1,17 @@
 ---
-title: UI Dev
+title: UI Devs Don't Fit Anywhere!
 layout: post
 tags:
   - uxd
   - ui-dev
-summary: Highly efficient data centers are the secret to green and cheap
+summary: How User Interface Development is changing the game between the business, user, and IT guy
 type: blog
 draft: true
 ---
 
-[Facebook's Open Compute Project](http://opencompute.org) debuts the server architecture (even on a hardware level!) that makes their data center one of the most efficient in the world.
+In re: your post http://paulhammant.com/2012/11/12/smaller-stories/
+
+Regardless of NFRs for style/css (which I feel are a bad assignation for styles -- the user actually realizes immense value from the visuals and branding of the site; furthermore, users can be hampered and won't be able to find functionality if the visuals are befuddled), this attitude represents the continuing frustration I have that TW devs believe the "UI is someone else's problem."
+
+Splitting it out into a separate story perpetuates this nonsense, and creates the scenario where, when there are UI devs as separate entities on the team, they become the only folks doing these stories, c.f. Darius' recent post in my.TW wherein the UI devs pre-build the front-end and pass it off the the back-end team.
+
