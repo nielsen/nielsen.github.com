@@ -1,7 +1,4 @@
----
-layout: nil
----
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>theodore nielsen</title>
   <link rel="alternate" type="text/html" href="http://theodorenielsen.com/" />
@@ -11,7 +8,7 @@ layout: nil
   <subtitle>this blog was born under the sign of saturn</subtitle>
 
   {% for post in site.posts limit:15 %}
-  
+
   <entry>
     <title>{{ post.title }}</title>
     <link rel='alternate' type='text/html' href='{{ post.url }}' />
@@ -34,4 +31,4 @@ layout: nil
     </content>
   </entry>
   {% endfor %}
-</feed>
+</feed> -->
