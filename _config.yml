@@ -1,3 +1,2 @@
-auto:        true
-server_port: 4567
+port: 4567
 markdown:    rdiscount

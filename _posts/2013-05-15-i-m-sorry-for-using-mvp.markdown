@@ -7,7 +7,7 @@ tags:
   - mvp
   - lean startup
   - lean
-summary: Fat MVPs are the devil.
+summary: Fat MVPs are the devil. But it's the devil we know.
 type: blog
 draft: true
 ---
