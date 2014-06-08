@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/nielsen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://theodorenielsen.com
+  * I am nielsen (https://keybase.io/nielsen) on keybase.
+  * I have a public key with fingerprint 6051 DD1F 0641 2A2A D850  7F22 3CBB 4DE4 C75B AAF0
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "6051dd1f06412a2ad8507f223cbb4de4c75baaf0",
+            "host": "keybase.io",
+            "key_id": "3cbb4de4c75baaf0",
+            "uid": "50d9779160da9f53f8adeb508f560100",
+            "username": "nielsen"
+        },
+        "service": {
+            "hostname": "theodorenielsen.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1402270569,
+    "expire_in": 157680000,
+    "prev": "42f47d3301e922b5747ecd923455613a754068fb113b78060c69f0f2a2f11f6e",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.21
+Comment: https://keybase.io/crypto
+
+yMMDAnicbZFrTBRXH8Z3C9WyiGClSGmp7Cyuihsyt8vOKrUBRaIfKFBrxabrzM4Z
+drjMLDOzrEhoMQGqTWNcyqVRWhJfDZVWSwPFGkr2paK2qKShrKWAWi4lwQSJkJaW
+sltnCf3W+XJynvN7nmfO+fdFhekMetPWcNGXPVahv/3/Rbcur35BqIBYiSuHbBVQ
+EVhZeEEsALJLFkQVskEkTCAch/AwiSMogzKclYApHkUxB8viHMAdFMEyDA9DFsgp
+KSGHFsMyCkgVJE3TNnaB09T/4N0rBwTM0RRFIyTMMTRPYLyV4QBLwFaeIGEEXgEV
+IItMCdBoUQDFChChSgukiWWCQxMrVppXAdUJJE6SwSqY6pBKtASXLKmSQyrWAKeq
+umwhv1ruChk8gLWvRtlZQeS022uGMiArgiRCNkQjHaoQykZwGEUpmCBpCwSOuQQZ
+2IUQQVCkFda+UA0o0yJxlMcpDsNgBNAoyhIUTgEHR6MYThAkgjEUgcOklWcRBGMp
+K0zCDpLmYV57Xh5BeBJo/QooFSXIhmm/yRRokYpQIDKqWwZQ5Xe9b4fr9Abdmmef
+Cc1PZ4iI+XeqOaXRgY1123P6Gowz5VNnaxvl3upE7xtJeNXmpVt1PYWxLxVun2+O
+W2r1kDCznDbXkptRf3ju5ZShM/54X9kp5fwu5WbmsaW5e9zAewf9aY8XqzddjpRv
+L2T8MuSDIjOidRfu+s979+X6rJN+8z871hU+cSYVZz86mVX5apLanvy+96+L6pbT
+0XuqZqLyM5TuhlbPrv38hqaLAw9BW3A6b/FAvk0Uu6P1tPN+k9CrO+7PNCWMNLwQ
+pp83xNR4Zef6wcjAlQRdfMC8ZLiumgZGNqV2C6PkmRc545OZvMHxqzs8ayf0ruCF
+zXG7iYQf9sbOf/FcXYspix615ieasWB9oOjeYs7cz5+WTCVLnrbpNrRx+Nvd6Q/O
+/W9k6s2mP5Krw8J+HXgXOVSj9yYOGwZ3Dr1Of93+42l7h7unFjO310rLP13a2vlg
+ts3YErOxcy/Wm3vy6Dbzni7XuiMP988enz66AWX+/KTVdEXQvVWuRAhXa2J3Et8f
+6E4nZjN//6x09p0tnf3ZNxbSvxktuuPV3+KC6uS1iBvLJ+4Xdn01Lj16fCmO6bfo
+hy83rw/kUR/kJI6tqQ2vG4zIhSfHW3vME4eK3R0ffuRG/35NKj13d990Zm2z9/OJ
+Rt/y4Y+/XHti7LeiNPZ6f0psZ5XxVFe8se+Va3dsMZaoI/S2ZDR49mDW8yn2m6kd
+TwGYL5DB
+=h7Bs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nielsen
+
+==================================================================
