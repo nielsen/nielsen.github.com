@@ -8,9 +8,7 @@ $(function(){
     template: function(i){return i["text"]}
   });
   
-  if ( $.cookie("alembic") == 'true' ) {
-	$('#rss').html('<a href="/portfolio.html">code</a>');
-  }
+  if ( $.cookie("alembic") == 'true' ) { $('#rss').html('<a href="/portfolio.html">code</a>'); }
   
   	
     
