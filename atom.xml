@@ -1,4 +1,4 @@
-<!-- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>theodore nielsen</title>
   <link rel="alternate" type="text/html" href="http://theodorenielsen.com/" />
@@ -31,4 +31,4 @@
     </content>
   </entry>
   {% endfor %}
-</feed> -->
+</feed>

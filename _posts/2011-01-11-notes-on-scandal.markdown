@@ -34,7 +34,6 @@ Archived from [original](http://www.stockyardmagazine.com/fictionpoetry/notes-on
 
 (Translated from Terence’s *The Eunuch*, Act III, Scene v)
 
-<img style="float:left; margin: 0 15px 15px 10px;" width="220" title="Amor and Psyche" src="http://www.stockyardmagazine.com/content/articleuploads/0710/left-scandal.jpg" alt="Amor and Psyche" />
 ## 2. Antithesis
 Hence are words learnt, hence eloquence acquired — the greatest of necessities for outlining and inveigling your opinion. We oughtn’t to know such words as “golden shower,” “bosom,” “sham,” “heaven’s abodes,” and others, all writ in that passage, unless Terence had introduced a lewd teenager to his audience, proposing that Jupiter was his exemplar for illicit trysts—
 

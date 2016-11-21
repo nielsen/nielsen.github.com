@@ -9,23 +9,15 @@ tags:
 summary: Had I told the sea what I felt for you...
 ---
 
-> In the summer
-
-> I stretch out on the shore
-
-> And think of you.
-
-> Had I told the sea
-
-> What I felt for you,
-
-> It would have left its shores,
-
-> Its shells,
-
-> Its fish,
-
-> And followed me.
+> In the summer <br/>
+> I stretch out on the shore <br/>
+> And think of you. <br/>
+> Had I told the sea <br/>
+> What I felt for you,<br/>
+> It would have left its shores,<br/>
+> Its shells,<br/>
+> Its fish,<br/>
+> And followed me.<br/>
 
 
 &mdash; Qabbani

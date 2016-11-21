@@ -9,9 +9,11 @@ summary: I am forced to wonder if there were a way to buy a pre-prayed rosary at
 type: blog
 ---
 
-<img width="440" src="http://media.tumblr.com/tumblr_leylgp9ZKz1qe0nh3.jpg" width="540" /> 
+<img width="440" src="http://media.tumblr.com/tumblr_leylgp9ZKz1qe0nh3.jpg" width="540" />
 
-Each string, she told me, was someone's unfulfilled prayer to Lord Shiva; running my hands through the knotted strings, from faded gray to brilliant saffron, the guide followed up, "Once the prayer is fulfilled, the person comes back and unties their string." She didn't find my follow-up amusing, "Shiva seems to have quite a backlog."
+Each string, she told me, was someone's unfulfilled prayer to Lord Shiva; running my hands through the knotted strings, from faded gray to brilliant saffron, the guide followed up, "Once the prayer is fulfilled, the person comes back and unties their string."
+
+She didn't find my follow-up amusing, "Shiva seems to have quite a backlog."
 
 A backlog of prayers seems to define India fairly well: half-finished metro projects, brick roads touched up with concrete, rotten fruit discarded from the *dashini* to the side of the road; it's a country caught between realities, where businessmen brush the dust from the fingertips of beggars off their suits mere feet from temples resonant with brass.
 

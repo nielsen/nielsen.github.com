@@ -1,2 +1,2 @@
 port: 4567
-markdown:    rdiscount
+markdown: kramdown

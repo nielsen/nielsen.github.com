@@ -6,15 +6,13 @@ tags:
  - poem
  - billy collins
  - love
- - how im feeling 
+ - how im feeling
 summary: You are the white apron of the baker, and the marsh birds suddenly in flight. However, you are not the wind in the orchard, the plums on the counter, or the house of cards.
 ---
 
-> You are the bread and the knife,
-
+> You are the bread and the knife,<br />
 > The crystal goblet and the wine...
-
-> **&mdash;Jacques Crickillon**
+**&mdash;Jacques Crickillon**
 
 You are the bread and the knife,
 

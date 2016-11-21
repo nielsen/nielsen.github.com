@@ -2,19 +2,7 @@
   <div class="entry">
 
   <h2>{{ page.title }}</h2>
-
-
-  {% unless page.tags == empty %}
-  <div id="tags">
-  <h3>{{ page.tags.size }} tags</h3>
-  <ul>
-  	{% for tag in page.tags %}
-  		<li>{{ tag }}</li>
-  	{% endfor %}
-  </ul>
-  </div>
-  {% endunless %}
-
+  
   {{ content }}
 
   </div>

@@ -7,7 +7,7 @@ tags:
   - about
   - india
   - sfw
-summary: I cannot say that I pleased to say that perhaps I am now capable of finishing.
+summary: I want to revisit the idea of having a Jerusalem because, amazingly enough, a young boy from the slums of India showed me what a city on a hill should really look like.
 type: blog
 ---
 
