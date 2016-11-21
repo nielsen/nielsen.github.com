@@ -1,0 +1,3 @@
+[submodule "simplequest"]
+	path = simplequest
+	url = https://github.com/nielsen/simplequest
