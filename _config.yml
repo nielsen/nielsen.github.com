@@ -1,2 +1,3 @@
 port: 4567
 markdown: kramdown
+exclude: ['simplequest']
