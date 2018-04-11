@@ -69,3 +69,72 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/nielsen
 
 ==================================================================
+
+==================================================================
+https://keybase.io/nielsen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://theodorenielsen.com
+  * I am nielsen (https://keybase.io/nielsen) on keybase.
+  * I have a public key with fingerprint D2BC ED0F 1759 5E39 870E  F635 E023 22FB C1B4 A859
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01015230245c674b56ec2020b62f308b10dd40944ea9cc21a4c10067f6e5f18257ce0a",
+      "fingerprint": "d2bced0f17595e39870ef635e02322fbc1b4a859",
+      "host": "keybase.io",
+      "key_id": "e02322fbc1b4a859",
+      "kid": "01015230245c674b56ec2020b62f308b10dd40944ea9cc21a4c10067f6e5f18257ce0a",
+      "uid": "50d9779160da9f53f8adeb508f560100",
+      "username": "nielsen"
+    },
+    "service": {
+      "hostname": "theodorenielsen.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1523474053,
+  "expire_in": 157680000,
+  "prev": "abbc528afb3df38d9acf3697bff081b63476d503ee3d05342cf56c9a1830f930",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMInAnicrZJbSBRRGMfX7hmhBPWQRjBYYmzLmcuZy0bUQxTmQ0IhIdEyZ853dsd0
+Zp2d3dxqu2EkRRcDQQgjojC6R0gGRRcrKMkuBhUFXaALIZqJERXWGbG3Hjsvh/Px
+//++7/9xbk8fH8rP27T4deNILrsor/tmWzpU3bN+12aBuDQrRDcLG2D0gloKKT+2
+waZCVEAiErEkI0nBlqopBKtgSUhCRJWYjHQiIkoVZCgKmIZlSaKpWCJCqsZUwEzU
+JaxZgEwhLDDbiYOX9GzH51gqEQsoYqKGDQyyoWsImCpjQJIsSYxYIlFMHRvcmHBT
+gYMPR8wURGyX1/gjNjreP/T/ee70KA4jamiaIaqImgbDMtNNCgQjnWGVt0KBMAWe
+Y9YBVzs21KbAEXJhgRcztgXBXoMgYwI/AS51PRgTRiy3jhOSnuu7llvLBQnfT0YD
+v59NBoaNQGJjqBixHcqXyQ0Z8FK26whRkSst3w7YQWpFUxCWwwI0JG0PYnagwJqq
+I36CNpDhSJMQC0u6yYhMmaxTw7SYrBoaYQzpIlE5RaUYyQAy5TRFsnhWyzBFXUbM
+kIPIKah3XM6W+JxmnDNTdtwx/bQHQu7WjXUTQnn5oUkTxwW/LJQ/tfDv37sQmzxS
+MmXezOZl+d8Sdwqbf9fvuXi0NdHdPpyNz//ZWXiv6Rmcr9h+8OnWFyVnp82KnHxU
+eeDSnFz4ULrgy1DB9QcdfbuXDK79MWBWmUprxt2y4kPv6lftO543lHWWFxdlp++r
+/Np7YE9XzYL3ZYcWxe/X1KOeBnTqjH1nzZH+JtpFm1j75MHrRQPXqpO5yx1vy+wr
+5x5PbOlaubDu4fvlfYUhx2uNvBm4G/2898yq/iq8ZWS4rfTljiXPJo2r7HKPL/31
+MX214PvhpbN/7izt+LWNZJ7sbirqLTr99seV/hMvNkFPcdVwONfXUhP7NHQt3qJO
+mRHxoLu6+EZtpmLd/vK5E941Nh77A7TBSWc=
+=qjO5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nielsen
+
+==================================================================
