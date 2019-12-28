@@ -1,27 +1,63 @@
----
-layout: default
-title: notes on camp
----
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
-{% for post in site.posts %}
-  <article class="{{ post.type }}">
-  {% unless post.type == 'quote' %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    	<p class="post_summary">{{ post.summary | kramdown }}</p>
+<meta charset="utf-8">
+<meta name="copyright" content="Copyright (c) T.O. Nielsen" />
+<meta name="robots" content="INDEX, FOLLOW" />
 
-      <div class="post_meta">
-    		<div><span class="para">&para;</span> {{ post.content | number_of_words }} words</div>
 
-      	{% unless post.tags == empty %}
-    		  <div><span class="para">&para;</span> {{ post.tags.size }} Tags: {{ post.tags | array_to_sentence_string }}</div>
-    		{% endunless %}
+	<meta name="keywords" content="" />
 
-      	<div><span class="para">&para;</span> Filed under: {{ post.type | capitalize}} </div>
-    		<div><img src="/static/img/anchor.svg" class="anchor" alt="Svbtle Permalink"> <a href="{{ post.url }}">Permalink</a></div>
-    	</div>
-    {% else %} <!-- It's a quote -->
-    	<div class="post_summary">{{ post.content }}</div>
-    {% endunless %}
 
-    </article> {% comment %} #this is for both post boxes {% endcomment %}
-{% endfor %}
+
+
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/main.css" type="text/css" media="screen" />
+<link rel="icon" href="/static/img/favicon.png" />
+
+
+<title>notes on camp | theodore nielsen</title>
+
+
+</head>
+
+<body>
+
+<div id="site">
+
+<div id="header">
+	<h1><a href="/"><img src="/static/img/t.png" width="180" alt="t" /></a></h1>
+	<p>"alembic" is more beautiful than "cellar door" &mdash; wandering feet with deep roots &mdash; born under the sign of the twins &mdash; orval. (if you know, you know.) </p>
+
+	<ul id="colophon">
+		<li>i've been known to have a thing or two to say on twitter as <a href="http://twitter.com/ted_nielsen">@ted_nielsen</a>.</li>
+		<li>my <a href="http://instagram.com/teddyn88">instagram</a> is all other-places and a curated view of what i want you to believe my life is like.</li>
+		<li>if you're looking for an <a href="/simplequest">adventure...</a></li>
+		<li>total nerd sometimes. my (mostly private, these days) code lives at <a href="https://github.com/nielsen">github</a>.</li>
+		<li>colophon: used to be powered by <a href="http://jekyllrb.com/">jekyll</a>. typeset in quattrocento sans.</li>
+		<li><abbr title="These are my opinions and not that of my lovely employer.">content</abbr> <abbr title="Steal not this book my honest friend / For fear the gallows should be your end, / And when you die the Lord will say / And where's the book you stole away?">&copy;</abbr> 2008-2020 theodore o. nielsen</li>
+		<li></li>
+	</ul>
+</div>
+
+
+</div>
+</body>
+
+</html>
+
+  
+
+
+</section>
+
+<footer></footer>
+
+</div>
+
+</div>
+</body>
+
+</html>
+
