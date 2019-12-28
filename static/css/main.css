@@ -6,6 +6,7 @@ h1, h2, h3, h4{font-weight: normal; color: #2A6768;}
 h1{margin: 15px; font-size: 1.5em;}
 h2{margin: 10px; font-size: 1.5em; color: #2A6768;}
 h3{margin: 10px; font-size: 1.3em; color: #2A6768;}
+h4{margin-left: 20px; color: #cc0000;}
 a{text-decoration: none; color: #E16354; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
 a:hover{text-decoration: underline; color: #F5B168;}
 a.exempt{padding:0 !important;}
@@ -14,20 +15,13 @@ ol{list-style: decimal; margin-left: 25px; padding-left: 15px;}
 abbr{border-bottom: 1px dotted silver;}
 footer{padding-top: 25px;}
 
-#site{width: 960px; margin: 0 auto; padding-bottom: 20px; position: relative;}
+#site{width: 320px; margin: 0 auto; padding-bottom: 20px; position: relative;}
 #header{width: 320px; float:left; padding-right:20px;}
 #header h1 img{display: block; margin: 0 auto;}
 #header p{margin: 20px 0 20px 20px;}
 
 ul#colophon{margin: 20px 0 0 20px; float: left;}
 ul#colophon li{font-size: .9em; margin: 7px 0;}
-
-navigation{ float: left; width: 100%; }
-#navigation{font-size: .9em;}
-#navigation li{float: left; margin-left: 20px; list-style: none;}
-
-#search_form{height:13px; display: block; position: relative; top: -5px;}
-#search_form_input{height:15px; margin: 0;  border: none; font-size: 10px; padding: 0; width: 70%; position: relative; top: -4px;}
 
 #content{word-wrap: break-word; float: left; width: 618px; border-left: 1px solid #D6D6D6; border-right: 1px solid #D6D6D6;}
 #content pre, code{ margin: 10px; line-height: 1.3em; }
